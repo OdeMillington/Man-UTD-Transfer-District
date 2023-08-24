@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500%27');
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cabin:ital@0;1&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +14,9 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    padding:1em 5em;
+    padding:.5em 5em;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
     font-family: 'Montserrat';
     font-size: 20px;
 }
@@ -50,10 +49,7 @@ a:hover {
     gap:3em;
 }
 
-.trans-type {
-    display: flex;
-    gap:2em
-}
+
 
 button {
     width: 140px;
@@ -63,16 +59,60 @@ button {
 }
 
 .transfers {
-    padding:1em 10em;
+    padding:1.5em 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.trans-type {
+    display: flex;
+    gap:2em;
+    margin-bottom:2em
+}
+
 .face-holder {
-    margin: 2em 0em;
-    height:200px;
-    border: 1px solid;
-    width: 200px;
-    border-radius: 12%;
+    margin: 2em 0em 0em 0em;
+}
+
+.face-holder img {
+    margin-top: 20px;
+}
+
+
+.clubs {
+    margin:1em 0em
+}
+
+#direction {
+    margin-right: 7px;
+}
+
+.trans-details {
+    padding: 0em 5em 5em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color:rgb(57, 60, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+.transfer-date, .player-position, .transfer-fee {
+    margin-bottom: .5em;
+}
+
+.transfer-date, .player-position {
+    font-family: 'Cabin', sans-serif;
+    color:white;
+    font-size:20px
+}
+
+.transfer-fee {
+    font-family: 'ADLaM Display', cursive;;
+    font-size: 30px;
+    color:crimson;
+    text-decoration: underline;
 }
