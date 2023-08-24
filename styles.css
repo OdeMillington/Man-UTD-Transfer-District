@@ -100,7 +100,7 @@ button {
 }
 
 .transfer-card-area {
-    width: 1120px;
+    padding: 0em 10em;
     display: flex;
     gap:1em;
     flex-wrap: wrap;
