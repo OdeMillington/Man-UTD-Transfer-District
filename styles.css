@@ -11,7 +11,7 @@ body {
     background-color: #24252A;
 }
 
-header {
+header, footer {
     display: flex;
     flex-direction: column;
     padding:.5em 5em;
@@ -21,11 +21,15 @@ header {
     font-size: 20px;
 }
 
+footer {
+    margin-top: 2em;
+}
+
 ul {
     list-style: none;
 }
 
-a {
+a, footer {
     color:#edf0f1;
     text-decoration: none;
 
@@ -56,6 +60,7 @@ button {
     height:72px;
     font-family: 'Montserrat', monospace;
     font-size: 18px;
+    
 }
 
 .transfers {
@@ -74,11 +79,6 @@ button {
 .face-holder {
     margin: 2em 0em 0em 0em;
 }
-
-.face-holder img {
-    margin-top: 20px;
-}
-
 
 .clubs {
     margin:1em 0em
@@ -99,20 +99,39 @@ button {
     margin-bottom: 1em;
 }
 
+.transfer-card-area {
+    width: 1120px;
+    display: flex;
+    gap:1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .transfer-date, .player-position, .transfer-fee {
     margin-bottom: .5em;
 }
 
-.transfer-date, .player-position {
+.transfer-date, .player-position, .player-name {
     font-family: 'Cabin', sans-serif;
     color:white;
     font-size:20px
+}
+
+.player-name {
+    padding-top: 1em;
+    padding-bottom:3px;
+    font-size:22px;
+    border-bottom: 1px solid;
 }
 
 .transfer-fee {
     font-family: 'ADLaM Display', cursive;;
     font-size: 30px;
     color:crimson;
-    text-decoration: underline;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+
 }
+
+
